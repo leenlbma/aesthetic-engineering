@@ -1,0 +1,14 @@
+{
+  "name": "aesthetic-engineering",
+  "version": "1.0.0",
+  "private": true,
+  "description": "审美工程：写给 AIGC 创作者与产品团队的 12 篇方法随笔与可视化阅读站点。",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node generate.mjs",
+    "check": "node scripts/check.mjs",
+    "preview": "node scripts/serve.mjs"
+  },
+  "dependencies": { "marked": "17.0.5" }
+}
