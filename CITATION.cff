@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: >-
+  请使用 preferred-citation 引用 LeenMa 的《Aesthetic Engineering｜审美工程》系列文章。
+  引用具体观点时请补充篇号、小节和来源链接。文章及原创配图采用 CC BY 4.0，网站代码采用 MIT；范围见 NOTICE.md。
+title: Aesthetic Engineering｜审美工程
+authors:
+  - family-names: LeenMa
+repository-code: https://github.com/leenlbma/aesthetic-engineering
+url: https://leenlbma.github.io/aesthetic-engineering/
+abstract: >-
+  写给 AIGC 创作者与产品团队的十二篇方法随笔及可视化阅读网站。
+  从审美语言、参考、方向、生成、评审与记忆，讨论创作判断如何被表达、落实、检查和修正。
+keywords:
+  - Aesthetic Engineering
+  - 审美工程
+  - AIGC
+  - 创作判断
+preferred-citation:
+  type: generic
+  title: Aesthetic Engineering｜审美工程
+  authors:
+    - family-names: LeenMa
+  year: 2026
+  url: https://leenlbma.github.io/aesthetic-engineering/

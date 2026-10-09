@@ -1,10 +1,17 @@
 # Aesthetic Engineering｜审美工程
 
+[![文章：CC BY 4.0](https://img.shields.io/badge/Articles-CC_BY_4.0-2f6f61.svg)](LICENSE-CONTENT)
+[![代码：MIT](https://img.shields.io/badge/Code-MIT-526876.svg)](LICENSE)
+
+**文章及原创配图：[CC BY 4.0](LICENSE-CONTENT) · 网站代码：[MIT](LICENSE) · 作者：LeenMa**
+
 **生成之后，我们如何选择？**
 
 12 篇写给 AIGC 创作者与产品团队的方法随笔。由 **LeenMa** 创作，从“AI 味”出发，讨论审美判断怎样被表达、落实、检查，并进入下一次创作。
 
-[在线阅读](https://leenlbma.github.io/aesthetic-engineering/) · [全文合集](content/Aesthetic-Engineering-全12篇合集.md) · [参考资料](content/参考资料.md) · [参与贡献](CONTRIBUTING.md)
+[在线阅读](https://leenlbma.github.io/aesthetic-engineering/) · [全文合集](content/Aesthetic-Engineering-全12篇合集.md) · [文章配图库](docs/images/README.md) · [参考资料](content/参考资料.md) · [参与贡献](CONTRIBUTING.md)
+
+这些文章也发布在我的小红书：[LeenMa 的小红书主页](https://www.xiaohongshu.com/user/profile/5b4a2a3df7e8b94fcb3a2d6b)。欢迎在那里阅读、交流创作中的判断与选择。
 
 ## 给 AI 阅读
 
@@ -41,6 +48,22 @@
 
 文中的概念公式、流程与模板用于讨论和试用；研究结论、方法示意与个人判断在文中分别说明。它们能否改善创作，需要在实际任务里检验。
 
+## 文章配图
+
+已收录系列总览与第四篇「审美语言」封面，原图、来源与对应篇目见 [配图库](docs/images/README.md)。
+
+**下面是早期系列总览，部分篇目和编号与现行目录不同；阅读顺序以本 README 上方的目录为准。**
+
+![审美工程早期系列总览，非现行十二篇目录](docs/images/series-overview-early.jpg)
+
+## 引用本系列
+
+仓库提供 [CITATION.cff](CITATION.cff)，可通过 GitHub 的 **Cite this repository** 入口复制引用。推荐署名：
+
+> LeenMa. (2026). Aesthetic Engineering｜审美工程. https://leenlbma.github.io/aesthetic-engineering/
+
+引用具体观点时，请补充篇号、文章标题、小节和链接。需要固定引用版本时，使用对应提交的文件链接；转载与改编还应附上 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) 许可链接，并注明修改。
+
 ## 本地运行
 
 需要 Node.js 20 或更新版本。
@@ -65,6 +88,8 @@ npm run preview
 ## 内容与维护
 
 - `content/`：独立文章与参考资料；构建会同步目录和全文合集。
+- `docs/images/`：文章配图原文件、来源与版本说明。
+- `CITATION.cff`：系列的机器可读引用信息。
 - `catalog.mjs`：篇目摘要与六层方法地图。
 - `generate.mjs`：页面生成、子路径适配与下载文件。
 - `article-diagrams.mjs`、`reading-diagrams.mjs`：文章图示与关系表达。

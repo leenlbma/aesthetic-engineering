@@ -5,6 +5,7 @@
 | 内容 | 许可 |
 | --- | --- |
 | `content/` 下的文章、合集、参考说明，以及网页中的原创文章图示与说明文字 | [CC BY 4.0](LICENSE-CONTENT) |
+| `docs/images/` 中作者提供的原创配图及配图说明 | [CC BY 4.0](LICENSE-CONTENT) |
 | 网站生成程序、交互脚本、样式与发布配置 | [MIT](LICENSE) |
 | README、贡献说明、`ai/` 阅读资料、`llms.txt` 与 `llms-full.txt` 等原创项目文档 | [CC BY 4.0](LICENSE-CONTENT) |
 
