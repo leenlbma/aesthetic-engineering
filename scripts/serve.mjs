@@ -6,7 +6,7 @@ import {fileURLToPath} from 'node:url';
 const dist=fileURLToPath(new URL('../dist/',import.meta.url));
 const {basePath}=JSON.parse(fs.readFileSync(path.join(dist,'build-info.json'),'utf8'));
 const port=Number(process.env.PORT||8765);
-const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.md':'text/plain; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml'};
+const mime={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.md':'text/plain; charset=utf-8','.txt':'text/plain; charset=utf-8','.json':'application/json; charset=utf-8','.svg':'image/svg+xml'};
 http.createServer((req,res)=>{
  try{
   const pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);

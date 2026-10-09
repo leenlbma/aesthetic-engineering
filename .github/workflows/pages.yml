@@ -29,8 +29,8 @@ jobs:
         env:
           BASE_PATH: /${{ github.event.repository.name }}/
       - run: npm run check
-      - name: Check article index and collection are current
-        run: git diff --exit-code -- content
+      - name: Check article and AI reading outputs are current
+        run: git diff --exit-code -- content ai/index.json llms.txt llms-full.txt
       - uses: actions/upload-pages-artifact@v3
         if: github.event_name != 'pull_request'
         with:

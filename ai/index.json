@@ -1,0 +1,470 @@
+{
+  "schema_version": 1,
+  "title": "Aesthetic Engineering｜审美工程",
+  "author": "LeenMa",
+  "language": "zh-CN",
+  "content_license": "CC-BY-4.0",
+  "repository": "https://github.com/leenlbma/aesthetic-engineering",
+  "branch": "main",
+  "source_digest": "474714b35f89a4c2b28874cbdf92691ed3863a75289a9c339dc7906c05aff5b7",
+  "guides": [
+    {
+      "title": "AI 阅读入口",
+      "source_path": "ai/README.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/ai/README.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/ai/"
+    },
+    {
+      "title": "六层概念索引",
+      "source_path": "ai/concepts.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/ai/concepts.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/ai/concepts/"
+    },
+    {
+      "title": "三个任务示例",
+      "source_path": "ai/tasks.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/ai/tasks.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/ai/tasks/"
+    }
+  ],
+  "reading_routes": {
+    "overview": [
+      "01",
+      "02",
+      "03",
+      "12"
+    ],
+    "describe": [
+      "04",
+      "08"
+    ],
+    "direction": [
+      "05",
+      "06",
+      "07"
+    ],
+    "review": [
+      "04",
+      "06",
+      "08"
+    ],
+    "revise": [
+      "07",
+      "08",
+      "09"
+    ],
+    "memory": [
+      "09",
+      "10",
+      "11"
+    ]
+  },
+  "sources": [
+    {
+      "path": "ai/README.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/ai/README.md",
+      "sha256": "adbc9c49d819a7d712edf2be88e10ecbaf7ff963a62c41485efb983c420ad8f3"
+    },
+    {
+      "path": "ai/concepts.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/ai/concepts.md",
+      "sha256": "76672e8ec3e5bb411cbeb027c8e64d8c7203f5ee0c37bb48d8e080b8cd113a98"
+    },
+    {
+      "path": "ai/tasks.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/ai/tasks.md",
+      "sha256": "abaf462016590ffc99d164b05a6fecc4da4383ddb3d524691796585512addf1d"
+    },
+    {
+      "path": "content/01-为什么AI做出来的东西总有一股AI味.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/01-%E4%B8%BA%E4%BB%80%E4%B9%88AI%E5%81%9A%E5%87%BA%E6%9D%A5%E7%9A%84%E4%B8%9C%E8%A5%BF%E6%80%BB%E6%9C%89%E4%B8%80%E8%82%A1AI%E5%91%B3.md",
+      "sha256": "093779bdcc6b9f3e29450682f1de2409a76081e3024b7f682cc6b0350e563a2c"
+    },
+    {
+      "path": "content/02-当生成不再稀缺审美会成为AIGC最大的壁垒.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/02-%E5%BD%93%E7%94%9F%E6%88%90%E4%B8%8D%E5%86%8D%E7%A8%80%E7%BC%BA%E5%AE%A1%E7%BE%8E%E4%BC%9A%E6%88%90%E4%B8%BAAIGC%E6%9C%80%E5%A4%A7%E7%9A%84%E5%A3%81%E5%9E%92.md",
+      "sha256": "711521625fc36c9eaacb921bd26363e5ba6bb424f449555b1b80f4043e216243"
+    },
+    {
+      "path": "content/03-Aesthetic-Engineering-我们能把审美工程化吗.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/03-Aesthetic-Engineering-%E6%88%91%E4%BB%AC%E8%83%BD%E6%8A%8A%E5%AE%A1%E7%BE%8E%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%90%97.md",
+      "sha256": "e2c7e04f12a8486d548f91153827e3bc2221107487793b2401a64f07b8171858"
+    },
+    {
+      "path": "content/04-审美语言.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/04-%E5%AE%A1%E7%BE%8E%E8%AF%AD%E8%A8%80.md",
+      "sha256": "f4831d0112052e0dc1334d54b5b227be1b40904f3d1caea9aa7a8dc6a1c961e4"
+    },
+    {
+      "path": "content/05-参考系统.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/05-%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F.md",
+      "sha256": "a344a20317ad9a1f6be9a83ebce613273a8aceaac2e137e990a21c93e3a0f1e3"
+    },
+    {
+      "path": "content/06-艺术指导.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/06-%E8%89%BA%E6%9C%AF%E6%8C%87%E5%AF%BC.md",
+      "sha256": "fd5b675d05f38a118ef1850d0658a599b85f4991087ce81b60f164605882a216"
+    },
+    {
+      "path": "content/07-生成协议.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/07-%E7%94%9F%E6%88%90%E5%8D%8F%E8%AE%AE.md",
+      "sha256": "1578ccaf06b39df717c9fed074963e2bcff42ecc74aa0d083615914c171da815"
+    },
+    {
+      "path": "content/08-审美评审.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/08-%E5%AE%A1%E7%BE%8E%E8%AF%84%E5%AE%A1.md",
+      "sha256": "805b6d9690b6bc8c9e0188d070830efa5fc74220cbcfbc17ad3a17608a0a3313"
+    },
+    {
+      "path": "content/09-审美记忆.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/09-%E5%AE%A1%E7%BE%8E%E8%AE%B0%E5%BF%86.md",
+      "sha256": "788e0f1d80bb106f611b8a8a2eec820056d3573dfca5a427f8e18280eba79573"
+    },
+    {
+      "path": "content/10-品牌审美.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/10-%E5%93%81%E7%89%8C%E5%AE%A1%E7%BE%8E.md",
+      "sha256": "4451a57bedf73f6a310f040c241fd8f01be84785e90935e200f320cc429bc2d9"
+    },
+    {
+      "path": "content/11-团队协作.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/11-%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C.md",
+      "sha256": "c6de9ad4f3988e6e26de2217142f3e6c1f468758acbe462ae0a5da3217836e62"
+    },
+    {
+      "path": "content/12-边界与未来.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/12-%E8%BE%B9%E7%95%8C%E4%B8%8E%E6%9C%AA%E6%9D%A5.md",
+      "sha256": "8f2c1523370f22f4c4aebc2fe2753f50619391afd545b5721dd4c73afafb86f2"
+    },
+    {
+      "path": "content/参考资料.md",
+      "url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99.md",
+      "sha256": "24bc96ec9d9b02bee47497822966bc4d64b04f01cb29539f63f9c1508ad2a69b"
+    }
+  ],
+  "articles": [
+    {
+      "id": "01",
+      "title": "为什么 AI 做出来的东西，总有一股“AI 味”？",
+      "summary": "从熟悉的完成度中，重新看见缺席的选择。",
+      "group": "问题与方法",
+      "source_path": "content/01-为什么AI做出来的东西总有一股AI味.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/01-%E4%B8%BA%E4%BB%80%E4%B9%88AI%E5%81%9A%E5%87%BA%E6%9D%A5%E7%9A%84%E4%B8%9C%E8%A5%BF%E6%80%BB%E6%9C%89%E4%B8%80%E8%82%A1AI%E5%91%B3.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/01/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/01.md",
+      "sha256": "093779bdcc6b9f3e29450682f1de2409a76081e3024b7f682cc6b0350e563a2c",
+      "bytes": 10687,
+      "sections": [
+        "一、AI 味到底是什么？",
+        "二、AI 味，本质上是一种「概率平均」吗？",
+        "三、好的审美，很多时候来自「不要」",
+        "四、Generation 和 Taste，其实是两个相反的过程",
+        "五、AIGC 最大的问题可能正在发生变化",
+        "六、Prompt Engineering 之后，可能是 Art Direction",
+        "七、这就是我为什么想提出「Aesthetic Engineering」",
+        "八、这可能是 AIGC 接下来非常重要的一层",
+        "写在最后"
+      ]
+    },
+    {
+      "id": "02",
+      "title": "当生成不再稀缺，审美会成为 AIGC 最大的壁垒",
+      "summary": "生成、创作与判断，怎样影响我们留下什么。",
+      "group": "问题与方法",
+      "source_path": "content/02-当生成不再稀缺审美会成为AIGC最大的壁垒.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/02-%E5%BD%93%E7%94%9F%E6%88%90%E4%B8%8D%E5%86%8D%E7%A8%80%E7%BC%BA%E5%AE%A1%E7%BE%8E%E4%BC%9A%E6%88%90%E4%B8%BAAIGC%E6%9C%80%E5%A4%A7%E7%9A%84%E5%A3%81%E5%9E%92.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/02/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/02.md",
+      "sha256": "711521625fc36c9eaacb921bd26363e5ba6bb424f449555b1b80f4043e216243",
+      "bytes": 14422,
+      "sections": [
+        "一、我们正在经历一次「创造力通胀」",
+        "二、AIGC 1.0：Generation",
+        "三、AIGC 2.0：Creation",
+        "四、当 AI 什么都会做，我们到底让它做什么？",
+        "五、AIGC 3.0：Taste",
+        "六、Generation 与 Taste，是两个相反的过程",
+        "七、所以 AI 越强，人类的 Taste 反而越重要",
+        "八、未来真正稀缺的，也许是「高质量否定」",
+        "九、未来的 Creative Workflow 会怎样变化",
+        "十、这会带来一个新的技术问题：Aesthetic Eval",
+        "十一、甚至品牌本身，也可能变成一种 Taste Model",
+        "十二、AIGC 的竞争正在从「能力」走向「品位」",
+        "十三、这也是为什么我要继续研究「Aesthetic Engineering」",
+        "写在最后"
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Aesthetic Engineering：我们能把「审美」工程化吗？",
+      "summary": "把描述、参考、方向、生成、评审与记忆接起来。",
+      "group": "问题与方法",
+      "source_path": "content/03-Aesthetic-Engineering-我们能把审美工程化吗.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/03-Aesthetic-Engineering-%E6%88%91%E4%BB%AC%E8%83%BD%E6%8A%8A%E5%AE%A1%E7%BE%8E%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%90%97.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/03/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/03.md",
+      "sha256": "e2c7e04f12a8486d548f91153827e3bc2221107487793b2401a64f07b8171858",
+      "bytes": 23629,
+      "sections": [
+        "一、审美为什么一直很难工程化？",
+        "二、AI 改变了一个非常重要的前提",
+        "三、Taste 会在你真正的选择里显露",
+        "四、第一层，应该讨论 Taste 如何被表达",
+        "五、Reference，可能比 Prompt 更接近 Taste",
+        "六、Prompt Engineering 之后，应该是 Art Direction",
+        "七、Generation Model 可以被放在 Renderer 的位置",
+        "八、关键的一层：Aesthetic Critic",
+        "九、Critic 需要给出下一步可以尝试的方向",
+        "十、下一层：Taste Memory",
+        "十一、Aesthetic Stack v0.1",
+        "十二、它运行起来应该是 Loop",
+        "十三、这件事情，与推荐系统有相通之处",
+        "十四、从 Personal Taste 到 Brand Taste",
+        "十五、我们真正工程化的不是「美」",
+        "十六、Taste 可能是 Intelligence 之上的另一层",
+        "十七、如果这个方向成立，AIGC 产品会换一种形态",
+        "十八、审美工程最终可能会变成一种基础能力",
+        "写在最后"
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Taste Language：我们到底该如何描述「审美」？",
+      "summary": "把“感觉不对”，变成可以讨论的具体差异。",
+      "group": "六层能力",
+      "source_path": "content/04-审美语言.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/04-%E5%AE%A1%E7%BE%8E%E8%AF%AD%E8%A8%80.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/04/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/04.md",
+      "sha256": "f4831d0112052e0dc1334d54b5b227be1b40904f3d1caea9aa7a8dc6a1c961e4",
+      "bytes": 22388,
+      "sections": [
+        "一、我们拥有 Taste，却不一定拥有 Taste Language",
+        "二、Prompt，本质上是一种「审美压缩」",
+        "三、为什么「高级感」几乎是一个无效词？",
+        "四、所以我们需要把 Taste 拆开",
+        "五、但仅仅拆视觉属性，还不够",
+        "六、我们可以先建立一个 Taste Coordinate System",
+        "七、更重要的是：我们还需要「负向语言」",
+        "八、Taste 最重要的语言，可能不是形容词，而是「关系」",
+        "九、从 Style Prompt 到 Taste Spec",
+        "十、但 Taste Language 永远不应该成为「审美公式」",
+        "十一、语言之后，还需要 Reference",
+        "十二、更有意思的是：AI 可以反过来帮助我们认识自己的 Taste",
+        "十三、所以未来真正重要的能力，不只是 Prompt Literacy",
+        "十四、Taste Language 的终点，不是让人变成设计师",
+        "十五、从 Prompt Engineering 到 Taste Engineering",
+        "十六、Taste Language 最终应该成为一种「活的语言」",
+        "十七、好的 Taste System，应该同时理解「我是谁」和「我正在变成谁」",
+        "十八、审美成长，本质上需要「被陌生的东西冒犯」",
+        "十九、所以 Taste Language 不是答案，而是一张地图",
+        "二十、从「我觉得不对」到「我知道哪里不对」",
+        "二十一、AI 可能反而会让更多人拥有更好的审美",
+        "二十二、未来最好的 AIGC 产品，可能一边帮你创作，一边训练你的 Taste",
+        "二十三、所以，「会用 AI」和「会创作」会重新分开",
+        "写在最后",
+        "下一篇：Reference System"
+      ]
+    },
+    {
+      "id": "05",
+      "title": "Reference System：为什么一张参考图，可能胜过 1000 个 Prompt？",
+      "summary": "说明借什么、不借什么，让图片带着职责进入创作。",
+      "group": "六层能力",
+      "source_path": "content/05-参考系统.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/05-%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/05/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/05.md",
+      "sha256": "a344a20317ad9a1f6be9a83ebce613273a8aceaac2e137e990a21c93e3a0f1e3",
+      "bytes": 22277,
+      "sections": [
+        "一、语言描述元素，图像保存关系",
+        "二、Reference 真正改变的，是搜索空间",
+        "三、一张 Reference 也可能毁掉整个结果",
+        "四、Moodboard 不等于 Reference System",
+        "五、最小单位不是图片，而是 Reference Atom",
+        "六、每张 Reference，都应该有一份职责声明",
+        "七、收藏夹储存欲望，取舍记录品味",
+        "八、Reference System 的生命周期",
+        "九、Embedding 可以找到相似，但相似不等于 Taste",
+        "十、检索的目标不是“最像”",
+        "十一、个人、品牌与项目，是三个不同层级",
+        "十二、高级的参考，是迁移结构而不是复制表面",
+        "十三、Reference 的三条边界",
+        "十四、不只记录“喜欢”，还要记录“有效”",
+        "十五、一套今天就可以开始的 Minimum Reference System",
+        "Reference System 最终工程化的，不是图片，而是 Judgment",
+        "写在最后",
+        "下一篇：Art Direction"
+      ]
+    },
+    {
+      "id": "06",
+      "title": "Art Direction：为什么真正重要的选择，应该发生在生成之前？",
+      "summary": "明确本轮目标、优先级，以及允许探索的边界。",
+      "group": "六层能力",
+      "source_path": "content/06-艺术指导.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/06-%E8%89%BA%E6%9C%AF%E6%8C%87%E5%AF%BC.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/06/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/06.md",
+      "sha256": "fd5b675d05f38a118ef1850d0658a599b85f4991087ce81b60f164605882a216",
+      "bytes": 21489,
+      "sections": [
+        "一、不是模型不会生成，而是我们太早开始生成",
+        "二、Art Direction 不是选择一种 Style",
+        "三、Reference 提供证据，Art Direction 作出选择",
+        "四、先提出 Direction Hypothesis，而不是直接寻找答案",
+        "五、先决定世界，再决定画面",
+        "六、一个方向必须拥有 Anchor",
+        "七、把变量分成 Fixed、Open 与 Forbidden",
+        "八、Variation Budget：创新不是越多越好",
+        "九、不要只做一个方向，要制造可比较的方向",
+        "十、把方向写成一份 Direction Contract",
+        "十一、Art Direction 决定的不是一张图，而是结果分布",
+        "十二、生成可以验证方向，但不能替代方向",
+        "十三、生成前最重要的评审，不是看图，而是看选择",
+        "十四、Art Direction 也可能成为权力工具",
+        "十五、一套今天就可以开始的 Minimum Art Direction",
+        "Art Direction 最终工程化的，是选择发生的顺序",
+        "写在最后",
+        "下一篇：Generation Protocol"
+      ]
+    },
+    {
+      "id": "07",
+      "title": "Generation Protocol：为什么一次生成，不应该只是一次抽奖？",
+      "summary": "围绕一个问题组织候选，比较、修正，也学会停止。",
+      "group": "六层能力",
+      "source_path": "content/07-生成协议.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/07-%E7%94%9F%E6%88%90%E5%8D%8F%E8%AE%AE.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/07/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/07.md",
+      "sha256": "1578ccaf06b39df717c9fed074963e2bcff42ecc74aa0d083615914c171da815",
+      "bytes": 16205,
+      "sections": [
+        "一、为什么生成了很多，却不知道自己进步在哪里",
+        "二、从一张好图，转向一次有问题的生成",
+        "三、一个完整案例：从“人在操作”，到“人拥有判断权”",
+        "四、探索、比较与收敛，分别需要什么",
+        "五、比较能告诉我们什么，不能告诉我们什么",
+        "六、从幸运样本，到稳定可用的生成条件",
+        "七、什么时候继续、回退、编辑或停止",
+        "八、一张最小实验记录：留下判断，也留下意外",
+        "写在最后"
+      ]
+    },
+    {
+      "id": "08",
+      "title": "Aesthetic Critic：AI 如何帮你做判断？",
+      "summary": "区分观察与解释，让建议有证据，也有保护范围。",
+      "group": "六层能力",
+      "source_path": "content/08-审美评审.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/08-%E5%AE%A1%E7%BE%8E%E8%AF%84%E5%AE%A1.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/08/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/08.md",
+      "sha256": "805b6d9690b6bc8c9e0188d070830efa5fc74220cbcfbc17ad3a17608a0a3313",
+      "bytes": 16041,
+      "sections": [
+        "一、评价之前，先说明什么值得被留下",
+        "二、先让 AI 指出证据，再听它解释",
+        "三、一个完整案例：精致与准确之间，怎样选择",
+        "四、好的批评，要给修改留下边界",
+        "五、评分模型有价值，但分数没有替我们完成取舍",
+        "六、让 AI 做评审，也要检查评审本身",
+        "七、分歧应该被解释，新的表达也应有位置",
+        "八、一份今天就能用的最小评审约定",
+        "写在最后"
+      ]
+    },
+    {
+      "id": "09",
+      "title": "Taste Memory：让 AI 记住你的审美",
+      "summary": "保存选择发生的条件，让记忆跟得上人的变化。",
+      "group": "六层能力",
+      "source_path": "content/09-审美记忆.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/09-%E5%AE%A1%E7%BE%8E%E8%AE%B0%E5%BF%86.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/09/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/09.md",
+      "sha256": "788e0f1d80bb106f611b8a8a2eec820056d3573dfca5a427f8e18280eba79573",
+      "bytes": 15675,
+      "sections": [
+        "一、一次选择，包含了多少没有说出口的条件？",
+        "二、记忆的最小单位，是一段有依据的选择经历",
+        "三、从经历到偏好，中间需要一层可以被推翻的假设",
+        "四、下一次调用记忆，先问这次哪里相似",
+        "五、更新与遗忘，让记忆跟得上人",
+        "六、越懂你，越需要给陌生表达留位置",
+        "七、怎样知道记忆真的有用？",
+        "八、从下一次选择开始，建立最小审美记忆",
+        "写在最后"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Brand Taste：如何让 AI 理解一个品牌？",
+      "summary": "在不同场景中延续立场，也为新表达留下位置。",
+      "group": "品牌与协作",
+      "source_path": "content/10-品牌审美.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/10-%E5%93%81%E7%89%8C%E5%AE%A1%E7%BE%8E.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/10/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/10.md",
+      "sha256": "4451a57bedf73f6a310f040c241fd8f01be84785e90935e200f320cc429bc2d9",
+      "bytes": 16167,
+      "sections": [
+        "一、从“符合规范”走到“理解取舍”",
+        "二、品牌一致性，需要明确哪里可以变化",
+        "三、一个案例：同样带货，为什么有的表达更属于品牌？",
+        "四、让一次判断变成可复用的品牌经验",
+        "五、怎样让这些约定进入 AI 的工作？",
+        "六、业务效果怎样参与，而不吞掉其他判断？",
+        "七、共同判断，需要明确的修改权",
+        "八、从一个品牌、一个场景开始",
+        "写在最后"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "从个人到组织：一支团队如何共同作出审美判断？",
+      "summary": "把分歧落到作品，把依据带进交接。",
+      "group": "品牌与协作",
+      "source_path": "content/11-团队协作.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/11-%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/11/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/11.md",
+      "sha256": "c6de9ad4f3988e6e26de2217142f3e6c1f468758acbe462ae0a5da3217836e62",
+      "bytes": 10571,
+      "sections": [
+        "一、争论之前，先确认大家正在解决同一个问题",
+        "二、让分歧落到作品中的一处",
+        "三、专业角色交付的，应当包括自己的依据",
+        "四、交接时，要传递正在保护什么",
+        "五、一次评审应该结束在一个具体动作上",
+        "六、不要让协作流程吃掉创作",
+        "七、判断团队是否进步，回到实际返工",
+        "写在最后"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "审美工程的边界：当 AI 越来越会创作，人怎样继续生长？",
+      "summary": "当系统越来越懂你，怎样继续接触陌生的经验。",
+      "group": "边界与未来",
+      "source_path": "content/12-边界与未来.md",
+      "source_url": "https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/12-%E8%BE%B9%E7%95%8C%E4%B8%8E%E6%9C%AA%E6%9D%A5.md",
+      "web_url": "https://leenlbma.github.io/aesthetic-engineering/articles/12/",
+      "markdown_url": "https://leenlbma.github.io/aesthetic-engineering/markdown/12.md",
+      "sha256": "8f2c1523370f22f4c4aebc2fe2753f50619391afd545b5721dd4c73afafb86f2",
+      "bytes": 11814,
+      "sections": [
+        "一、能够描述的部分，值得整理；尚未说清的部分，也需要位置",
+        "二、好的不完美，需要说明它在作品里做了什么",
+        "三、人的角色会扩展，不能只剩下最后点一次确认",
+        "四、审美成长，需要在熟悉之外做一点实际工作",
+        "五、文化经验不能只作为风格素材被调用",
+        "六、规模会放大选择，也会放大未经检查的习惯",
+        "七、谁来决定什么值得被喜欢？",
+        "八、走完十二篇，我们实际得到什么？",
+        "写在最后"
+      ]
+    }
+  ]
+}

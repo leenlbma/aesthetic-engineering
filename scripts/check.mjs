@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import assert from 'node:assert/strict';
 import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
 
 const root=fileURLToPath(new URL('../',import.meta.url));
 const dist=path.join(root,'dist');
@@ -34,7 +35,43 @@ for(let n=1;n<=12;n++){
  assert.ok(fs.existsSync(path.join(dist,'articles',id,'index.html')));
  assert.deepEqual(fs.readFileSync(path.join(root,'content',files[0])),fs.readFileSync(path.join(dist,'markdown',id+'.md')));
 }
-assert.equal(pages.length,15,'Expected homepage, 12 essays, references and 404');
+assert.equal(pages.length,18,'Expected homepage, 12 essays, references, 3 AI guides and 404');
 const all=fs.readFileSync(path.join(root,'content','Aesthetic-Engineering-全12篇合集.md'),'utf8');
 assert.equal((all.match(/<a id="article-\d{2}"><\/a>/g)||[]).length,12);
-console.log(`Checked 12 articles, ${pages.length} pages and ${links} local links at ${basePath}`);
+const digest=value=>createHash('sha256').update(value).digest('hex');
+const index=JSON.parse(fs.readFileSync(path.join(root,'ai/index.json'),'utf8'));
+const full=fs.readFileSync(path.join(root,'llms-full.txt'),'utf8');
+assert.equal(index.articles.length,12);
+assert.equal(index.guides.length,3);
+assert.deepEqual(index.articles.map(a=>a.id),Array.from({length:12},(_,i)=>String(i+1).padStart(2,'0')));
+assert.equal(index.source_digest,digest(JSON.stringify(index.sources)));
+for(const source of index.sources){
+ assert.equal(source.sha256,digest(fs.readFileSync(path.join(root,source.path))),`Stale AI source: ${source.path}`);
+ assert.ok(full.includes(source.url),`Full text bundle missing source: ${source.path}`);
+}
+for(const article of index.articles){
+ const source=fs.readFileSync(path.join(root,article.source_path),'utf8');
+ assert.equal(article.sha256,digest(source));
+ assert.equal(article.bytes,Buffer.byteLength(source));
+ assert.ok(article.sections.length>0);
+ assert.ok(full.includes(source.trim()),`Full text bundle missing article body: ${article.id}`);
+}
+for(const ids of Object.values(index.reading_routes))for(const id of ids)assert.ok(index.articles.some(a=>a.id===id));
+for(const file of ['llms.txt','llms-full.txt','ai/index.json']){
+ assert.deepEqual(fs.readFileSync(path.join(root,file)),fs.readFileSync(path.join(dist,file)),`Published AI copy is stale: ${file}`);
+}
+// Check authored relative links and every first-party Raw URL without relying on deployment.
+const rawPrefix='https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/';
+for(const file of ['README.md','CONTRIBUTING.md','NOTICE.md','ai/README.md','ai/concepts.md','ai/tasks.md','llms.txt','llms-full.txt']){
+ const text=fs.readFileSync(path.join(root,file),'utf8');
+ for(const match of text.matchAll(/\]\(([^)]+)\)/g)){
+  const url=match[1];
+  if(url.startsWith(rawPrefix)){
+   const target=decodeURIComponent(url.slice(rawPrefix.length).split('#')[0]);
+   assert.ok(fs.existsSync(path.join(root,target)),`Missing Raw target: ${url}`);
+  }else if(!/^(?:[a-z]+:|#|\/\/)/i.test(url)){
+   assert.ok(fs.existsSync(path.resolve(root,path.dirname(file),url.split('#')[0])),`Missing document link: ${file} → ${url}`);
+  }
+ }
+}
+console.log(`Checked 12 articles, ${pages.length} pages, ${links} local links and AI reading sources at ${basePath}`);

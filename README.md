@@ -6,6 +6,16 @@
 
 [在线阅读](https://leenlbma.github.io/aesthetic-engineering/) · [全文合集](content/Aesthetic-Engineering-全12篇合集.md) · [参考资料](content/参考资料.md) · [参与贡献](CONTRIBUTING.md)
 
+## 给 AI 阅读
+
+从 **[AI 阅读入口](ai/README.md)** 开始，按任务选择正文；可直接把下面的地址交给能够访问网页的 AI：
+
+**https://leenlbma.github.io/aesthetic-engineering/llms.txt**
+
+[六层概念索引](ai/concepts.md) · [三个任务示例](ai/tasks.md) · [机器可读索引](ai/index.json) · [完整文本包](llms-full.txt)
+
+`llms.txt` 提供阅读顺序和原文直链，`llms-full.txt` 包含指引、12 篇全文与参考资料。部分 AI 不会自动读取索引，需要明确提供地址；上下文有限时建议逐篇读取。输入材料、引用方式与方法边界见阅读入口。
+
 ## 从这里开始
 
 网站包含六层交互地图、完整文章、主题筛选、章节目录、阅读进度和 Markdown 下载。流程、结构与关系表达以图示呈现，支持手机阅读。
@@ -59,9 +69,13 @@ npm run preview
 - `generate.mjs`：页面生成、子路径适配与下载文件。
 - `article-diagrams.mjs`、`reading-diagrams.mjs`：文章图示与关系表达。
 - `assets/`：样式与交互；`dist/` 是生成结果，不直接编辑。
+- `ai/`：AI 阅读入口、概念索引、任务示例与机器可读索引。
+- `scripts/ai-reading.mjs`：同步生成 `llms.txt`、`llms-full.txt`、`ai/index.json` 和网站上的 AI 阅读入口。
 - `.github/workflows/pages.yml`：检查并发布 GitHub Pages。
 
 修改文章或网站后提交到 `main`，GitHub Actions 会自动检查、构建和发布。Pull Request 只运行检查。若 Fork 此仓库，需要在 **Settings → Pages → Source** 中选择 **GitHub Actions**；当前发布流程按项目站点的 `/仓库名/` 路径构建。使用账号根站点或自定义域名时，将工作流的 `BASE_PATH` 改为 `/`，并更新 README 与页面中的项目链接。
+
+修改独立正文或 AI 指引后，运行 `npm run build` 并提交同步生成的目录、合集、`llms.txt`、`llms-full.txt` 和 `ai/index.json`。这些文件不应分别手工维护；CI 会检查其是否与源文件一致。
 
 ## 开源许可
 

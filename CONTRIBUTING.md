@@ -13,6 +13,8 @@
 3. 运行 `npm ci`、`npm run build` 和 `npm run check`。构建会同步文章目录与全文合集，提交这些更新。
 4. 如果改动了流程或字符图，请同步调整 `article-diagrams.mjs` 或 `reading-diagrams.mjs` 中的网页展示。
 
+AI 阅读资料在 `ai/README.md`、`ai/concepts.md` 和 `ai/tasks.md` 中维护，概念与示例应注明对应篇目。`llms.txt`、`llms-full.txt`、`ai/index.json` 由构建同步生成，请与文章目录、合集一起提交，避免 AI 入口与正文形成不同版本。
+
 文字保留随笔感，面向 AIGC 创作者与产品团队。优先说明具体问题、选择和下一步，避免把概念公式写成已经验证的定量规律。
 
 ## 修改网站

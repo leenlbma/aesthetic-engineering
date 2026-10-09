@@ -1,0 +1,46 @@
+# Aesthetic Engineering｜审美工程
+
+> LeenMa 的 12 篇中文方法随笔，面向 AIGC 创作者与产品团队。讨论审美语言、参考、方向、生成、评审与记忆。文章与原创图示采用 CC BY 4.0，网站代码采用 MIT。
+
+本索引帮助 AI 按任务找正文。它不保证工具会自动读取这些文件。请以用户当前任务为准，区分原文观点、实际作品观察、推断和建议；未取得的材料留为未知。
+
+## 开始阅读
+
+- [AI 阅读入口](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/ai/README.md): 阅读顺序、材料边界与引用方式。
+- [六层概念索引](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/ai/concepts.md): 六层定义、输入产物、关系、边界和对应原文。
+- [三个任务示例](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/ai/tasks.md): 比较作品、制定方向、修改与回看；包含最小输入、请求模板和示意。
+- [机器可读索引](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/ai/index.json): 篇目、原文直链、章节标题、任务路由和内容 SHA-256。
+- [完整文本包](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/llms-full.txt): 阅读指引、概念与任务示例、12 篇全文、参考资料；文本较长，可按需逐篇读取。
+
+## 按任务选篇
+
+- 理解框架：01、02、03、12。
+- 描述差异：04、08。
+- 参考与方向：05、06，安排生成时补 07。
+- 比较作品：04、06、08。
+- 修改与回看：07、08、09。
+- 经验、品牌与团队：09、10、11。
+
+## 十二篇原文
+
+- [01 · 为什么 AI 做出来的东西，总有一股“AI 味”？](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/01-%E4%B8%BA%E4%BB%80%E4%B9%88AI%E5%81%9A%E5%87%BA%E6%9D%A5%E7%9A%84%E4%B8%9C%E8%A5%BF%E6%80%BB%E6%9C%89%E4%B8%80%E8%82%A1AI%E5%91%B3.md): 从熟悉的完成度中，重新看见缺席的选择。
+- [02 · 当生成不再稀缺，审美会成为 AIGC 最大的壁垒](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/02-%E5%BD%93%E7%94%9F%E6%88%90%E4%B8%8D%E5%86%8D%E7%A8%80%E7%BC%BA%E5%AE%A1%E7%BE%8E%E4%BC%9A%E6%88%90%E4%B8%BAAIGC%E6%9C%80%E5%A4%A7%E7%9A%84%E5%A3%81%E5%9E%92.md): 生成、创作与判断，怎样影响我们留下什么。
+- [03 · Aesthetic Engineering：我们能把「审美」工程化吗？](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/03-Aesthetic-Engineering-%E6%88%91%E4%BB%AC%E8%83%BD%E6%8A%8A%E5%AE%A1%E7%BE%8E%E5%B7%A5%E7%A8%8B%E5%8C%96%E5%90%97.md): 把描述、参考、方向、生成、评审与记忆接起来。
+- [04 · Taste Language：我们到底该如何描述「审美」？](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/04-%E5%AE%A1%E7%BE%8E%E8%AF%AD%E8%A8%80.md): 把“感觉不对”，变成可以讨论的具体差异。
+- [05 · Reference System：为什么一张参考图，可能胜过 1000 个 Prompt？](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/05-%E5%8F%82%E8%80%83%E7%B3%BB%E7%BB%9F.md): 说明借什么、不借什么，让图片带着职责进入创作。
+- [06 · Art Direction：为什么真正重要的选择，应该发生在生成之前？](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/06-%E8%89%BA%E6%9C%AF%E6%8C%87%E5%AF%BC.md): 明确本轮目标、优先级，以及允许探索的边界。
+- [07 · Generation Protocol：为什么一次生成，不应该只是一次抽奖？](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/07-%E7%94%9F%E6%88%90%E5%8D%8F%E8%AE%AE.md): 围绕一个问题组织候选，比较、修正，也学会停止。
+- [08 · Aesthetic Critic：AI 如何帮你做判断？](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/08-%E5%AE%A1%E7%BE%8E%E8%AF%84%E5%AE%A1.md): 区分观察与解释，让建议有证据，也有保护范围。
+- [09 · Taste Memory：让 AI 记住你的审美](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/09-%E5%AE%A1%E7%BE%8E%E8%AE%B0%E5%BF%86.md): 保存选择发生的条件，让记忆跟得上人的变化。
+- [10 · Brand Taste：如何让 AI 理解一个品牌？](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/10-%E5%93%81%E7%89%8C%E5%AE%A1%E7%BE%8E.md): 在不同场景中延续立场，也为新表达留下位置。
+- [11 · 从个人到组织：一支团队如何共同作出审美判断？](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/11-%E5%9B%A2%E9%98%9F%E5%8D%8F%E4%BD%9C.md): 把分歧落到作品，把依据带进交接。
+- [12 · 审美工程的边界：当 AI 越来越会创作，人怎样继续生长？](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/12-%E8%BE%B9%E7%95%8C%E4%B8%8E%E6%9C%AA%E6%9D%A5.md): 当系统越来越懂你，怎样继续接触陌生的经验。
+
+## 参考与来源
+
+- [参考资料与术语说明](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/content/%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99.md): 原始研究链接、引用范围和容易混淆的术语。
+- [署名与许可范围](https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/NOTICE.md): 作者 LeenMa；转载、改编与第三方引用的许可说明。
+- [可视化阅读](https://leenlbma.github.io/aesthetic-engineering/): 供人阅读的完整网站。
+- [GitHub 仓库](https://github.com/leenlbma/aesthetic-engineering): 文件与提交历史。
+
+正文中的比例和公式多为概念表达，六层结构是工作分工，不是统一行业标准。不要从视觉评价直接推断点击率或转化率；偏好记录需区分经历、假设与当前约定。引用时给出篇号、标题、小节和来源链接。main 会更新，需要复现时请使用提交固定链接，或核对 ai/index.json 的内容校验值。
