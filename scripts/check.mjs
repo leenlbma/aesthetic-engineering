@@ -13,6 +13,7 @@ let links=0;
 for(const file of pages){
  const html=fs.readFileSync(file,'utf8');
  assert.equal((html.match(/<h1[ >]/g)||[]).length,1,`Expected one title: ${file}`);
+ assert.equal([...html.matchAll(/<script defer src="https:\/\/cloud\.umami\.is\/script\.js" data-website-id="([^"]+)"><\/script>/g)].map(m=>m[1]).join(),'8ba58f50-24d2-4d61-a09c-1aa3558a4ade',`Umami script missing or wrong id: ${file}`);
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
  assert.equal(ids.length,new Set(ids).size,`Duplicate section ids: ${file}`);
  for(const m of html.matchAll(/\b(?:href|src)="([^"]+)"/g)){

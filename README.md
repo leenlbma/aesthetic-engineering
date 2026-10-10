@@ -100,6 +100,8 @@ npm run preview
 
 修改文章或网站后提交到 `main`，GitHub Actions 会自动检查、构建和发布。Pull Request 只运行检查。若 Fork 此仓库，需要在 **Settings → Pages → Source** 中选择 **GitHub Actions**；当前发布流程按项目站点的 `/仓库名/` 路径构建。使用账号根站点或自定义域名时，将工作流的 `BASE_PATH` 改为 `/`，并更新 README 与页面中的项目链接。
 
+站点使用 Umami Cloud 做不带 cookie 的访问统计（仅页面访问，无个人信息）。
+
 修改独立正文或 AI 指引后，运行 `npm run build` 并提交同步生成的目录、合集、`llms.txt`、`llms-full.txt` 和 `ai/index.json`。这些文件不应分别手工维护；CI 会检查其是否与源文件一致。
 
 ## 开源许可
