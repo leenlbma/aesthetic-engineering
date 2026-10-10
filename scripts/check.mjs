@@ -10,10 +10,27 @@ const {basePath}=JSON.parse(fs.readFileSync(path.join(dist,'build-info.json'),'u
 const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
 const pages=walk(dist).filter(f=>f.endsWith('.html'));
 let links=0;
+const metaOf=(html,attr,key)=>(html.match(new RegExp('<meta '+attr+'="'+key+'" content="([^"]*)"'))||[])[1];
+const png=fs.readFileSync(path.join(dist,'og-cover.png'));
+assert.equal(png.readUInt32BE(16)+'x'+png.readUInt32BE(20),'1200x630','og-cover.png must be 1200x630');
+
 for(const file of pages){
  const html=fs.readFileSync(file,'utf8');
  assert.equal((html.match(/<h1[ >]/g)||[]).length,1,`Expected one title: ${file}`);
  assert.equal([...html.matchAll(/<script defer src="https:\/\/cloud\.umami\.is\/script\.js" data-website-id="([^"]+)"><\/script>/g)].map(m=>m[1]).join(),'8ba58f50-24d2-4d61-a09c-1aa3558a4ade',`Umami script missing or wrong id: ${file}`);
+ {
+  const canonical=(html.match(/<link rel="canonical" href="([^"]+)"/)||[])[1];
+  assert.ok(canonical&&/^https:\/\//.test(canonical)&&canonical.includes(basePath),`Missing absolute canonical: ${file}`);
+  assert.equal(metaOf(html,'property','og:url'),canonical,`og:url differs from canonical: ${file}`);
+  const isArticle=path.relative(dist,file).startsWith('articles');
+  assert.equal(metaOf(html,'property','og:type'),isArticle?'article':'website',`og:type: ${file}`);
+  for(const k of ['og:site_name','og:title','og:description','og:image:alt','og:locale','og:image:width','og:image:height'])assert.ok(metaOf(html,'property',k),`Missing ${k}: ${file}`);
+  for(const k of ['twitter:card','twitter:title','twitter:description','twitter:image'])assert.ok(metaOf(html,'name',k),`Missing ${k}: ${file}`);
+  assert.equal(metaOf(html,'name','twitter:card'),'summary_large_image');
+  const image=metaOf(html,'property','og:image');
+  assert.equal(metaOf(html,'name','twitter:image'),image);
+  assert.equal(image,new URL(canonical).origin+basePath+'og-cover.png',`og:image URL: ${file}`);
+ }
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
  assert.equal(ids.length,new Set(ids).size,`Duplicate section ids: ${file}`);
  for(const m of html.matchAll(/\b(?:href|src)="([^"]+)"/g)){

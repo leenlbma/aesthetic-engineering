@@ -14,11 +14,20 @@ if(/[?#\s<>"\\]/.test(suppliedBase)||suppliedBase.split('/').includes('..'))thro
 const basePath='/'+suppliedBase.split('/').filter(Boolean).join('/')+(suppliedBase.split('/').filter(Boolean).length?'/':'');
 fs.rmSync(out,{recursive:true,force:true});
 fs.mkdirSync(out,{recursive:true});
-for(const asset of ['style.css','diagrams.css','app.js'])fs.copyFileSync(path.join(root,'assets',asset),path.join(out,asset));
+for(const asset of ['style.css','diagrams.css','app.js','og-cover.png'])fs.copyFileSync(path.join(root,'assets',asset),path.join(out,asset));
 fs.writeFileSync(path.join(out,'.nojekyll'),'');
 fs.writeFileSync(path.join(out,'build-info.json'),JSON.stringify({basePath,articles:12})+'\n');
 function writePage(relative,html){
  const file=path.join(out,relative);fs.mkdirSync(path.dirname(file),{recursive:true});
+ const origin=process.env.SITE_ORIGIN||'https://leenlbma.github.io';
+ const route=relative==='index.html'?'':relative.replace(/index\.html$/,'');
+ const url=origin+basePath+route;
+ const pageTitle=(html.match(/<title>([^<]*)<\/title>/)||[])[1]||'审美工程';
+ const pageDesc=(html.match(/<meta name="description" content="([^"]*)"/)||[])[1]||'';
+ const isArticle=relative.startsWith('articles/');
+ const image=origin+basePath+'og-cover.png';
+ const tags='<link rel="canonical" href="'+url+'"><meta property="og:type" content="'+(isArticle?'article':'website')+'"><meta property="og:site_name" content="审美工程 Aesthetic Engineering"><meta property="og:title" content="'+pageTitle+'"><meta property="og:description" content="'+pageDesc+'"><meta property="og:url" content="'+url+'"><meta property="og:image" content="'+image+'"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="审美工程 Aesthetic Engineering：生成之后，我们如何选择？"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="'+pageTitle+'"><meta name="twitter:description" content="'+pageDesc+'"><meta name="twitter:image" content="'+image+'">';
+ html=html.replace('<meta name="author"',tags+'<meta name="author"');
  const prepared=html.replace('<html lang="zh-CN">','<html lang="zh-CN" data-base-path="'+basePath+'">').replace(/\b(href|src)="\/(?!\/)/g,(_,attribute)=>attribute+'="'+basePath);
  fs.writeFileSync(file,prepared);
 }
