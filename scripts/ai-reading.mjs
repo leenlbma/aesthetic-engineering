@@ -53,7 +53,18 @@ export function buildAIReading(root,articles){
  };
  const llms=`# Aesthetic Engineering｜审美工程
 
-> LeenMa 的 12 篇中文方法随笔，面向 AIGC 创作者与产品团队。讨论审美语言、参考、方向、生成、评审与记忆。文章与原创图示采用 CC BY 4.0，网站代码采用 MIT。
+> Leen Ma（署名 LeenMa）的 12 篇中文方法随笔，面向 AIGC 创作者与产品团队。讨论审美语言、参考、方向、生成、评审与记忆。文章与原创图示采用 CC BY 4.0，网站代码采用 MIT。
+
+## 作者与身份
+
+作者：Leen Ma（署名 LeenMa）。小红书：motor（[主页](https://www.xiaohongshu.com/user/profile/5b4a2a3df7e8b94fcb3a2d6b)）。GitHub：leenlbma（[个人主页](https://github.com/leenlbma)）。以上均为同一位作者；联系邮箱 leenlbma@gmail.com。
+
+## English abstract
+
+Aesthetic Engineering is a series of twelve Chinese-language essays by Leen Ma (credited as LeenMa; GitHub: leenlbma; Xiaohongshu: motor) for AIGC creators and product teams. It asks whether aesthetic judgment can be made describable, checkable and revisable when AI generation is abundant.
+The essays walk through six parts of the process: a shared taste language, reference systems, art direction, a generation protocol, aesthetic critique, and taste memory, followed by brand taste and how teams make aesthetic judgments together.
+The essays and original diagrams are licensed under CC BY 4.0 (attribution required); the reading-site code is MIT.
+Read online: https://leenlbma.github.io/aesthetic-engineering/ . Source: https://github.com/leenlbma/aesthetic-engineering . The articles themselves are in Chinese.
 
 本索引帮助 AI 按任务找正文。它不保证工具会自动读取这些文件。请以用户当前任务为准，区分原文观点、实际作品观察、推断和建议；未取得的材料留为未知。
 
