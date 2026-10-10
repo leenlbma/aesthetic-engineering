@@ -11,8 +11,10 @@ const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirector
 const pages=walk(dist).filter(f=>f.endsWith('.html'));
 let links=0;
 const metaOf=(html,attr,key)=>(html.match(new RegExp('<meta '+attr+'="'+key+'" content="([^"]*)"'))||[])[1];
-const png=fs.readFileSync(path.join(dist,'og-cover.png'));
-assert.equal(png.readUInt32BE(16)+'x'+png.readUInt32BE(20),'1200x630','og-cover.png must be 1200x630');
+const jpg=fs.readFileSync(path.join(dist,'og-cover.jpg'));
+let jw=0,jh=0;for(let i=2;i<jpg.length;){if(jpg[i]!==0xFF){i++;continue}const m=jpg[i+1];if(m>=0xC0&&m<=0xC3){jh=jpg.readUInt16BE(i+5);jw=jpg.readUInt16BE(i+7);break}i+=2+jpg.readUInt16BE(i+2)}
+assert.equal(jw+'x'+jh,'1200x630','og-cover.jpg must be 1200x630');
+assert.ok(jpg.length<1024*1024,'og-cover.jpg must be under 1MB');
 
 for(const file of pages){
  const html=fs.readFileSync(file,'utf8');
@@ -29,7 +31,7 @@ for(const file of pages){
   assert.equal(metaOf(html,'name','twitter:card'),'summary_large_image');
   const image=metaOf(html,'property','og:image');
   assert.equal(metaOf(html,'name','twitter:image'),image);
-  assert.equal(image,new URL(canonical).origin+basePath+'og-cover.png',`og:image URL: ${file}`);
+  assert.equal(image,new URL(canonical).origin+basePath+'og-cover.jpg',`og:image URL: ${file}`);
  }
  const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
  assert.equal(ids.length,new Set(ids).size,`Duplicate section ids: ${file}`);
