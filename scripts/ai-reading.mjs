@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import {marked} from 'marked';
+import {publishedMonth} from '../catalog.mjs';
 
 const repository='https://github.com/leenlbma/aesthetic-engineering';
 const rawBase='https://raw.githubusercontent.com/leenlbma/aesthetic-engineering/main/';
@@ -41,7 +42,7 @@ export function buildAIReading(root,articles){
   {path:referencePath,url:sourceURL(referencePath),sha256:hash(reference)},
  ];
  const manifest={
-  schema_version:1,title:'Aesthetic Engineering｜审美工程',author:'LeenMa',
+  schema_version:1,title:'Aesthetic Engineering｜审美工程',author:'LeenMa',published:publishedMonth,
   language:'zh-CN',content_license:'CC-BY-4.0',repository,branch:'main',
   source_digest:hash(JSON.stringify(sources)),
   guides:guides.map(g=>({title:g.title,source_path:g.file,source_url:sourceURL(g.file),web_url:site+g.route})),

@@ -20,3 +20,8 @@ export const layers=[
  {label:'审美评审',en:'Aesthetic Critic',verb:'判断',question:'为什么留下这一版？',detail:'回到作品核对证据，给出有条件的选择和修改建议，同时保护已经成立的部分。',result:'留下：选择理由与修改范围',id:'08'},
  {label:'审美记忆',en:'Taste Memory',verb:'积累',question:'什么经验值得带到下一次？',detail:'把经历、偏好假设与当前约定分开保存，让过去帮助现在，也允许新的要求改变默认。',result:'留下：可以复用、可以更新的经验',id:'09'}
 ];
+
+// Publication month of the series (YYYY-MM). Articles were written in August 2026;
+// the repo was created later, so git dates are not used.
+export const publishedMonth = '2026-08';
+export const publishedLabel = '2026 年 8 月';

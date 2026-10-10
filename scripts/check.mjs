@@ -62,6 +62,8 @@ const digest=value=>createHash('sha256').update(value).digest('hex');
 const index=JSON.parse(fs.readFileSync(path.join(root,'ai/index.json'),'utf8'));
 const full=fs.readFileSync(path.join(root,'llms-full.txt'),'utf8');
 assert.equal(index.articles.length,12);
+assert.equal(index.published,'2026-08','ai/index.json published month');
+for(const n of Array.from({length:12},(_,i)=>String(i+1).padStart(2,'0'))){const h=fs.readFileSync(path.join(dist,'articles',n,'index.html'),'utf8');assert.ok(h.includes('2026 年 8 月')&&h.includes('datetime="2026-08"'),'Publication month missing: '+n)}
 assert.equal(index.guides.length,3);
 assert.deepEqual(index.articles.map(a=>a.id),Array.from({length:12},(_,i)=>String(i+1).padStart(2,'0')));
 assert.equal(index.source_digest,digest(JSON.stringify(index.sources)));
