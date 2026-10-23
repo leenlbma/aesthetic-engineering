@@ -2,14 +2,23 @@
 
 [![文章：CC BY 4.0](https://img.shields.io/badge/Articles-CC_BY_4.0-2f6f61.svg)](LICENSE-CONTENT)
 [![代码：MIT](https://img.shields.io/badge/Code-MIT-526876.svg)](LICENSE)
+[![在线阅读](https://img.shields.io/badge/在线阅读-leenlbma.github.io-e74628.svg)](https://leenlbma.github.io/aesthetic-engineering/)
+[![llms.txt](https://img.shields.io/badge/AI_友好-llms.txt-142427.svg)](https://leenlbma.github.io/aesthetic-engineering/llms.txt)
 
 **文章及原创配图：[CC BY 4.0](LICENSE-CONTENT) · 网站代码：[MIT](LICENSE) · 作者：LeenMa**
 
 **生成之后，我们如何选择？**
 
+> 把“感觉不对”变成说得清、做得到、查得了的审美判断。
+> *Aesthetic Engineering: making aesthetic judgment describable, actionable and checkable in the age of AI generation.*
+
+### 👉 [在线阅读全部 12 篇 · Read online](https://leenlbma.github.io/aesthetic-engineering/)
+
 12 篇写给 AIGC 创作者与产品团队的方法随笔。由 **LeenMa** 创作，从“AI 味”出发，讨论审美判断怎样被表达、落实、检查，并进入下一次创作。
 
 [在线阅读](https://leenlbma.github.io/aesthetic-engineering/) · [全文合集](content/Aesthetic-Engineering-全12篇合集.md) · [文章配图库](docs/images/README.md) · [参考资料](content/参考资料.md) · [参与贡献](CONTRIBUTING.md)
+
+如果这个系列对你有帮助，欢迎点一个 ⭐ Star，方便以后找回，也让更多做 AIGC 的朋友看到。
 
 这些文章也发布在我的小红书：[LeenMa 的小红书主页](https://www.xiaohongshu.com/user/profile/5b4a2a3df7e8b94fcb3a2d6b)。欢迎在那里阅读、交流创作中的判断与选择。
 
@@ -29,18 +38,18 @@
 
 | 篇目 | 讨论的问题 |
 | --- | --- |
-| [01 · 为什么 AI 做出来的东西总有一股 AI 味](content/01-为什么AI做出来的东西总有一股AI味.md) | 完成度之外，哪些选择缺席了？ |
-| [02 · 当生成不再稀缺，审美会成为 AIGC 最大的壁垒](content/02-当生成不再稀缺审美会成为AIGC最大的壁垒.md) | 生成、创作与判断有何不同？ |
-| [03 · 我们能把审美工程化吗](content/03-Aesthetic-Engineering-我们能把审美工程化吗.md) | 六层能力怎样连接成工作过程？ |
-| [04 · 审美语言](content/04-审美语言.md) | 怎样把“感觉不对”说清楚？ |
-| [05 · 参考系统](content/05-参考系统.md) | 参考究竟借什么、不借什么？ |
-| [06 · 艺术指导](content/06-艺术指导.md) | 生成之前，哪些选择最重要？ |
-| [07 · 生成协议](content/07-生成协议.md) | 怎样让每一轮生成带来信息？ |
-| [08 · 审美评审](content/08-审美评审.md) | 评语怎样成为可靠的修改建议？ |
-| [09 · 审美记忆](content/09-审美记忆.md) | 哪些经验值得带到下一次？ |
-| [10 · 品牌审美](content/10-品牌审美.md) | 品牌原则怎样进入具体判断？ |
-| [11 · 团队协作](content/11-团队协作.md) | 多人怎样共同判断与交接？ |
-| [12 · 边界与未来](content/12-边界与未来.md) | 系统越懂我们，怎样继续生长？ |
+| [01 · 为什么 AI 做出来的东西总有一股 AI 味](https://leenlbma.github.io/aesthetic-engineering/articles/01/) · [md](content/01-为什么AI做出来的东西总有一股AI味.md) | 完成度之外，哪些选择缺席了？ |
+| [02 · 当生成不再稀缺，审美会成为 AIGC 最大的壁垒](https://leenlbma.github.io/aesthetic-engineering/articles/02/) · [md](content/02-当生成不再稀缺审美会成为AIGC最大的壁垒.md) | 生成、创作与判断有何不同？ |
+| [03 · 我们能把审美工程化吗](https://leenlbma.github.io/aesthetic-engineering/articles/03/) · [md](content/03-Aesthetic-Engineering-我们能把审美工程化吗.md) | 六层能力怎样连接成工作过程？ |
+| [04 · 审美语言](https://leenlbma.github.io/aesthetic-engineering/articles/04/) · [md](content/04-审美语言.md) | 怎样把“感觉不对”说清楚？ |
+| [05 · 参考系统](https://leenlbma.github.io/aesthetic-engineering/articles/05/) · [md](content/05-参考系统.md) | 参考究竟借什么、不借什么？ |
+| [06 · 艺术指导](https://leenlbma.github.io/aesthetic-engineering/articles/06/) · [md](content/06-艺术指导.md) | 生成之前，哪些选择最重要？ |
+| [07 · 生成协议](https://leenlbma.github.io/aesthetic-engineering/articles/07/) · [md](content/07-生成协议.md) | 怎样让每一轮生成带来信息？ |
+| [08 · 审美评审](https://leenlbma.github.io/aesthetic-engineering/articles/08/) · [md](content/08-审美评审.md) | 评语怎样成为可靠的修改建议？ |
+| [09 · 审美记忆](https://leenlbma.github.io/aesthetic-engineering/articles/09/) · [md](content/09-审美记忆.md) | 哪些经验值得带到下一次？ |
+| [10 · 品牌审美](https://leenlbma.github.io/aesthetic-engineering/articles/10/) · [md](content/10-品牌审美.md) | 品牌原则怎样进入具体判断？ |
+| [11 · 团队协作](https://leenlbma.github.io/aesthetic-engineering/articles/11/) · [md](content/11-团队协作.md) | 多人怎样共同判断与交接？ |
+| [12 · 边界与未来](https://leenlbma.github.io/aesthetic-engineering/articles/12/) · [md](content/12-边界与未来.md) | 系统越懂我们，怎样继续生长？ |
 
 ## 怎样使用
 
